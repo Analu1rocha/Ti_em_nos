@@ -1,0 +1,831 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+}
+
+.image-logo img {
+    width: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.image-logo h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+header nav ul li a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    background-color: #4822b3;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/*main*/
+
+/*home*/
+
+#home {
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+}
+
+
+.developer img {
+    width: 400px;
+}
+
+#home .title-home {
+    color: white;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+
+}
+
+#home .title-home h1 {
+    color: #4822b3;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#home .title-home p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    width: 482px;
+}
+
+.btn-home{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#home>.title-home>.btn-home>button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+#home .title-home .btn-home .contato {
+    background-color: #4822b3;
+}
+
+#home .title-home .btn-home .contato a {
+    text-decoration: none;
+    color: white;
+}
+
+#home .title-home .btn-home .projetos a {
+    text-decoration: none;
+    color: black;
+}
+
+/* progresso*/
+
+#progresso {
+    background-color: white;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#progresso .quantidade {
+    display: flex;
+    justify-content: center;
+}
+
+#progresso .quantidade .sinal {
+    font-size: 4vw;
+    color: #4822b3;
+    margin-right: 4px;
+}
+
+#progresso .quantidade .numero {
+    font-size: 4vw;
+}
+
+#progresso p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*serviços*/
+
+#servicos {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-servicos {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.text-servicos h2 {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-servicos p {
+    color: #4822b3;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 14px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 80px;
+}
+
+.cards-servicos {
+    border: 1px solid #4822b3;
+    width: 240px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-servicos:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 8px 20px rgb(72, 34, 179);
+    cursor: pointer;
+}
+
+.cards-servicos h3 {
+    color: white;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.cards-servicos .borda {
+    width: 80%;
+    height: 2px;
+    background-color: #4822b3;
+    margin-bottom: 5px;
+}
+
+.cards-servicos p {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 16px;
+}
+
+/*Sobre*/
+
+#sobre-nos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.text-sobre {
+    align-self: center;
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 50px;
+
+}
+
+.text-sobre .title {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.text-sobre .title>h2 {
+    color: black;
+    font-size: 30px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.text-sobre .title p {
+    color: #4822b3;
+    margin-top: 16px;
+}
+
+.imagens {
+    width: 40%;
+}
+
+.imagens .img-fundo {
+    position: relative;
+    width: 307px;
+    height: 280px;
+    border: 2px solid #4822b3;
+    background-color: #4822b3;
+    margin-left: 36%;
+}
+
+.imagens .img-capa img {
+    width: 307px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 8%;
+}
+
+/*Porque contratar?*/
+
+#porque-contratar {
+    background-color: black;
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagem-contratar img {
+    width: 360px;
+    margin-top: 40px;
+}
+
+
+.text-como-vamos-ajudar {
+    color: white;
+    width: 40%;
+    align-self: center;
+}
+
+.title-ajudar {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.title-ajudar h2 {
+    margin-right: 5px;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.title-ajudar p {
+    color: #4822b3;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.text-como-vamos-ajudar p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#projetos {
+    background-color: #4922b398;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.title-projetos {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.title-projetos h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.title-projetos p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.slider {
+    width: 80%;
+    height: 380px;
+    position: relative;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.item {
+    position: absolute;
+    border: black 2px solid;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+    width: 200px;
+    height: 300px;
+}
+
+.item img {
+    width: 200px;
+    max-height: 300px;
+}
+
+.botoes-slide{
+    display: flex;
+    gap: 20px;
+}
+
+
+#next,
+#prev {   
+    background-color: transparent;
+    border-radius:30px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+#next:hover, #prev:hover{
+    color: #fff;
+}
+
+
+/*Contato*/
+
+#contato {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 0;
+}
+
+#contato img {
+    width: 460px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.title h2 {
+    color: white;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.title p {
+    color: #4822b3 !important;
+    margin-top: 14px;
+}
+
+.title-contato p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.inputs form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    background-color: #fff;
+    margin-bottom: 5px;
+    height: 30px;
+    border: 2px solid #4822b3;
+    text-indent: 10px;
+    border-radius: 2px;
+}
+
+form input:focus {
+    outline: #4822b3;
+}
+
+textarea {
+    background-color: #fff;
+    border: 2px solid #4822b3;
+    text-indent: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    height: 140px;
+    padding-top: 10px;
+}
+
+textarea:focus {
+    outline: #4822b3;
+}
+
+.btn-enviar {
+    color: white;
+    background-color: #4822b3;
+    cursor: pointer;
+    border: 2px #4822b3 solid;
+    padding: 6px;
+}
+
+.btn-enviar:hover {
+    background-color: #4922b385;
+}
+
+/*footer*/
+
+footer {
+    background-color: rgb(72, 34, 179);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer .contato p i {
+    padding-right: 8px;
+    font-size: 16px;
+}
+
+footer h3 {
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.sobre {
+    width: 200px;
+}
+
+.links ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-thanks {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-thanks .logo img {
+    width: 300px;
+}
+
+.container-thanks .text {
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.container-thanks .text h1 {
+    margin-bottom: 20px;
+}
+
+.contato p {
+    padding-bottom: 20px;
+}
+
+.link i {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border: #4822b3 1px solid;
+    color: black;
+    background-color: #4822b3;
+}
+
+.link i:hover {
+    background-color: #4922b3c2;
+}
+
+.direitos {
+    margin-top: 10px;
+}
+
+
+@media (min-width: 300px) {
+    #next,
+    #prev {
+        position: -webkit-sticky;
+        position: sticky;
+       
+    }
+}
+
+
+@media (max-width: 900px) {
+    header {
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+    }
+
+    .image-logo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-logo h1 {
+        font-size: 20px;
+    }
+
+    .menu-mobile {
+        display: block;
+        position: relative;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 4%, rgba(156, 18, 173, 1) 60%, rgba(0, 212, 255, 1) 100%);
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    #menu-toggle {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        border: none;
+        width: 100%;
+    }
+
+    .menu-mobile .links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #7141d3;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links.show-links {
+        display: block;
+    }
+
+    .menu-mobile .links a {
+        display: block;
+        padding: 5px 0;
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+
+    .menu-mobile .links a:hover {
+        background-color: black;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .menu-mobile i {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home .title-home {
+        width: 100%;
+        text-align: center;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    #home .developer {
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+
+    #home .developer img {
+        max-width: 240px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards-servicos {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    #sobre-nos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .imagens .img-capa img {
+
+        width: 120px;
+        position: relative;
+    }
+
+    .imagens .img-fundo {
+        display: none;
+    }
+
+    .text-sobre {
+        width: 90%;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .text-sobre .title {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .text-sobre .title {
+        margin-right: 0;
+    }
+
+    #porque-contratar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-contratar img {
+        width: 280px;
+    }
+
+    .text-como-vamos-ajudar {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .title-ajudar {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contato .image-contato>img {
+        width: 280px;
+        margin-top: -60px;
+    }
+
+    .title-contato {
+        width: 90%;
+    }
+
+    .box-title {
+        text-align: center;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .sobre {
+        display: none;
+    }
+
+    footer {
+        text-align: justify;
+    }
+
+    .links {
+        padding-right: 40px;
+    }
+
+    footer .contato p {
+        padding-bottom: 10px;
+    }
+}
