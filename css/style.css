@@ -111,13 +111,14 @@ header nav ul li a:hover::after {
 #home .title-home p {
     font-weight: 300;
     margin-bottom: 20px;
-    width: 482px;
+    width: 80%;
 }
 
 .btn-home{
-    width: 400px;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -125,7 +126,7 @@ header nav ul li a:hover::after {
     width: 140px;
     height: 40px;
     border: none;
-    border-radius: 2px;
+    border-radius: 6px;
     background-color: white;
     cursor: pointer;
     transition: 2s;
@@ -183,7 +184,7 @@ header nav ul li a:hover::after {
 #servicos {
     background-color: black;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,11 +219,14 @@ header nav ul li a:hover::after {
 
 .cards-servicos {
     border: 1px solid #4822b3;
-    width: 240px;
-    height: 280px;
+    background-color: #fff;
+    width: 280px;
+    height: 600px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 6px;
 }
 
 .cards-servicos:hover {
@@ -232,7 +236,7 @@ header nav ul li a:hover::after {
 }
 
 .cards-servicos h3 {
-    color: white;
+    color: black;
     margin: 10px;
     font-weight: 400;
 }
@@ -244,13 +248,32 @@ header nav ul li a:hover::after {
     margin-bottom: 5px;
 }
 
-.cards-servicos p {
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
-    margin: 16px;
+.cards-servicos ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+}
+.cards-servicos li {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 6px;
 }
 
+.btn-saiba {
+    background-color: #4822b3;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
 /*Sobre*/
 
 #sobre-nos {
@@ -328,6 +351,22 @@ header nav ul li a:hover::after {
     color: white;
     width: 40%;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-contato{
+    width: 50%;
+    padding: 8px 10px;
+    background-color: #4822b3;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
 }
 
 .title-ajudar {
@@ -354,15 +393,16 @@ header nav ul li a:hover::after {
 }
 
 #projetos {
-    background-color: #4922b398;
+    background-color: #ffffff8e;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
 }
 
 .title-projetos {
     display: flex;
+    justify-content: center;
     margin-top: 60px;
     margin-bottom: 40px;
 }
@@ -374,17 +414,26 @@ header nav ul li a:hover::after {
     text-transform: uppercase;
 }
 
+.sub-title{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
 .title-projetos p {
-    color: #fff;
+    color: #4822b3;
     font-size: 16px;
     margin-top: 14px;
 }
 
 .slider {
-    width: 80%;
-    height: 380px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
     position: relative;
-    margin-bottom: 60px;
     overflow: hidden;
 }
 
@@ -392,20 +441,22 @@ header nav ul li a:hover::after {
     position: absolute;
     border: black 2px solid;
     transition: 0.5s;
-    left: calc(50% - 110px);
+    left: calc(50% - 150px);
     top: 0;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 440px;
 }
 
 .item img {
-    width: 200px;
-    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .botoes-slide{
     display: flex;
     gap: 20px;
+    margin-top: 20px;
 }
 
 
@@ -422,7 +473,7 @@ header nav ul li a:hover::after {
 }
 
 #next:hover, #prev:hover{
-    color: #fff;
+    color: #4822b3;
 }
 
 
@@ -506,6 +557,7 @@ textarea:focus {
     cursor: pointer;
     border: 2px #4822b3 solid;
     padding: 6px;
+    border-radius: 6px;
 }
 
 .btn-enviar:hover {
@@ -693,17 +745,31 @@ footer h3 {
     }
 
     #home {
+        width: 100%;
         display: flex;
+        height: 100%;
         flex-direction: column;
+        align-items: center;
     }
+
+    .btn-home{
+        width: 100%;
+    }
+
 
     #home .title-home {
         width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         order: 2;
+        text-align: center;
         margin-top: 20px;
     }
 
+    .title-home p{
+       text-align: center;
+    }
     #home .developer {
         display: flex;
         justify-content: center;
